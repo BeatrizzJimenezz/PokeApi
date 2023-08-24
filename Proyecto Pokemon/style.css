@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@font-face{
+    font-family: Pokemon; src: url(KoomikMono-Regular.otf) ;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height:100%;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.inicial{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.d-flex{
+    width: 70%;
+    margin: 10px;
+}
+
+.pregunta-grande{
+    font-family: 'Black Ops One';
+    margin: 10px;
+}
+
+section{
+    height: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.medio{
+    height: 100%;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+.btn-agua{
+    background-color: blue;
+    color: white;
+    font-size: 35px;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-family: 'Black Ops One';
+}
+
+.btn-fuego{
+    background-color: brown;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size: 35px;
+    font-family: 'Black Ops One';
+}
+
+.btn-roca{
+    background-color: gainsboro;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-rayo{
+    background-color: goldenrod;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-bicho{
+    background-color: green;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-dragon{
+    background-color: red;
+    color:white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-electrico{
+    background-color: yellow;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-hada{
+    background-color: darkorchid;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-lucha{
+    background-color: darkslategrey;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-fantasma{
+    background-color:lightslategray;
+    color:white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:30px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-planta{
+    background-color: greenyellow;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-volador{
+    background-color: burlywood;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-hielo{
+    background-color: aquamarine;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-normal{
+    background-color: lightsteelblue;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-psiquico{
+    background-color: bisque;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-veneno{
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-acero{
+    background-color: silver;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+.btn-tierra{
+    background-color:saddlebrown;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size:35px ;
+    font-family: 'Black Ops One';
+}
+
+img{
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+}
+
+footer{
+    width: 97%;
+    margin: 20px;
+    height: 50%;
+    background-color: red;
+    text-align: center;
+}
