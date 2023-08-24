@@ -1,0 +1,190 @@
+        <!---Columna-->
+        <div class="col">
+            <!---INICIO CARD-->
+            <div class="card">
+                <!---ID DEL POKEMON-->
+                <div class="card-header">
+                    <div class="card-header-social">
+                        <p class="card-text"><small class="text-body-secondary">id</small></p>
+                    </div>
+                </div>
+
+                <!---CUERPO DE LA CARD-->
+                <div class="row g-0">
+                    <!---NAME-->
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">name</h5>
+                        </div>
+                    </div>
+                    <!---IMAGEN-->
+                    <div class="col-md-4">
+                        <img src="..." class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---Columna-->
+        <div class="col">
+            <!---INICIO CARD-->
+            <div class="card">
+                <!---ID DEL POKEMON-->
+                <div class="card-header">
+                    <div class="card-header-social">
+                        <p class="card-text"><small class="text-body-secondary">id</small></p>
+                    </div>
+                </div>
+
+                <!---CUERPO DE LA CARD-->
+                <div class="row g-0">
+                    <!---NAME-->
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">name</h5>
+                        </div>
+                    </div>
+                    <!---IMAGEN-->
+                    <div class="col-md-4">
+                        <img src="..." class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---Columna-->
+        <div class="col">
+            <!---INICIO CARD-->
+            <div class="card">
+                <!---ID DEL POKEMON-->
+                <div class="card-header">
+                    <div class="card-header-social">
+                        <p class="card-text"><small class="text-body-secondary">id</small></p>
+                    </div>
+                </div>
+
+                <!---CUERPO DE LA CARD-->
+                <div class="row g-0">
+                    <!---NAME-->
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">name</h5>
+                        </div>
+                    </div>
+                    <!---IMAGEN-->
+                    <div class="col-md-4">
+                        <img src="..." class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---Columna-->
+        <div class="col">
+            <!---INICIO CARD-->
+            <div class="card">
+                <!---ID DEL POKEMON-->
+                <div class="card-header">
+                    <div class="card-header-social">
+                        <p class="card-text"><small class="text-body-secondary">id</small></p>
+                    </div>
+                </div>
+
+                <!---CUERPO DE LA CARD-->
+                <div class="row g-0">
+                    <!---NAME-->
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">name</h5>
+                        </div>
+                    </div>
+                    <!---IMAGEN-->
+                    <div class="col-md-4">
+                        <img src="..." class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        const pintarCard = (pokemon) => {
+            const main = document.querySelector("main");
+            const template = document.getElementById("card").content;
+            const clone = template.cloneNode(true);
+            const fragment = document.createDocumentFragment();
+          
+            //clone.querySelector(".card-body-img").setAttribute("src", pokemon.imgCvg);
+            clone.querySelector('.card-body-img').setAttribute('src', pokemon.imgJuego)
+            clone.querySelector(".card-body-title").innerHTML = pokemon.nombre;
+            clone.querySelectorAll(".card-footer-social h3")[0].textContent = pokemon.num;
+            clone.querySelectorAll(".card-footer-social h3")[1].textContent = pokemon.tipo;
+          
+            fragment.appendChild(clone);
+            main.appendChild(fragment);
+          };
+
+
+
+          <template id="prueba">
+
+            <article class="row row-cols-1 row-cols-md-4 g-4" id="prueba">
+        
+                <!---Columna-->
+                <div class="col">
+                    <!---INICIO CARD-->
+                    <div class="card">
+                        <!---ID DEL POKEMON-->
+                        <div class="card-header">
+                            <div class="card-header-social">
+                                <p class="card-text"><small class="text-body-secondary">id</small></p>
+                            </div>
+                        </div>
+        
+                        <!---CUERPO DE LA CARD-->
+                        <div class="row g-0">
+                            <!---NAME-->
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title text-capitalize fs-3">name</h5>
+                                    <span class="badge bg-secondary text-capitalize">New</span>
+                                    <span class="badge bg-secondary text-capitalize"></span>
+                                </div>
+                            </div>
+                            <!---IMAGEN-->
+                            <div class="col-md-4">
+                                <img src="" alt="..." class="card-body-img img-fluid rounded-start"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </article>
+        
+          </template>
+
+
+          <template id="card">
+            <article class="card" style="width: 30rem;">
+            
+            
+              <div class="card-body">
+                <img src="" alt="imagen de vitoko" class="card-body-img"/>
+        
+                <h1 class="card-body-title">
+                  <span></span>
+                </h1>
+              </div>
+        
+              <div class="card-footer">
+                <div class="card-footer-social">
+                    <h3></h3>
+                </div>
+                <div class="card-footer-social">
+                    <h3></h3>
+                </div>
+              </div>
+            </article>
+        
+          </template>
