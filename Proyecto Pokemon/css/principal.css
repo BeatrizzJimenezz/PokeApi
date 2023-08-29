@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DAFFFB;
+    margin: 30px;
+}
+
+header{
+    background-color: black;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.circle{
+    background-color: #176B87;
+    height: 200px;
+    width: 1000px;
+    border-radius: 0px 0px 1000px 1000px;
+
+}
+
+.capsula{
+    position: absolute;
+    display: flex;
+    width: 1050px;
+    justify-content:right;
+} 
+
+.img-inicio{
+    height: 250px;   
+}
+
+.text{
+    padding:20px ;
+    text-align: center;
+    color: aliceblue;
+}
+
+main{
+    background-color: #176B87;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-around;
+    border-radius: 20px;
+}
+
+.botones{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px;
+    padding: 30px;
+}
+
+.boton-1{
+    margin: 10px;
+    height: 150px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    margin-top: 20px;
+    background-color: beige;
+    border-radius: 20px;
+    display: grid;
+    grid-template-areas: 
+    "info  aside aside"
+    "info  aside aside";
+}
+
+.info{
+    grid-area: info;
+    padding: 20px;
+}
+
+aside{
+    grid-area: aside;
+    padding: 20px;
+}
+
+.info-poke{
+    margin: 20px;
+    text-align: justify;
+}
+
+
+
+
+
