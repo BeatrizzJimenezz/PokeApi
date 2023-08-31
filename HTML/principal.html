@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOSTRAP -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/boosted@4.5.0/dist/js/boosted.min.js" integrity="sha384-R024d8eLkqTtaLUSJ9MrQ9ay65hb/spmrvV7W1B2MuguSjYsCx3KVKjdjc9zUbPb" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/principal.css">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"/>
+    <title>POKEDEX</title>
+    <link rel="icon" href="../Img/pokeagua.svg">
+</head>
+<body>
+
+    <!-- Circulo -->
+    <div class="circle w-100 p-4 pb-4 d-flex justify-content-center align-items-center flex-column"> <!--Este div es la cosa circular-->
+
+       <div class="capsula">
+                <img class="img-inicio" src="https://pokemoncalc.web.app/en/assets/pokeball.svg">
+        </div>
+
+        <div class="text">
+            <img src="../img/pokeagua.svg" alt="..." class="pokeagua card-body-img img-fluid rounded-start "/>
+            <p>What Pokémon are you looking for?</p>
+
+        </div>
+
+        <form class="search input-group rounded" data-form>
+            <input type="search" class="form-control rounded" placeholder="Squirtle..." aria-label="Search" aria-describedby="search-addon" />
+            <button class="btn input-group-text border-0" id="search-addon">
+              <i class="fas fa-search" style="color: white;"></i>
+            </button>
+        </form>
+
+    </div>
+
+    
+    <div class="text">
+        <a href="../HTML/index.html" class="but btn" style="background-color: #c76862;"><h1>ALL</h1><img class="img-boton" src="https://pokemoncalc.web.app/en/assets/pokeball.svg"></a>
+    </div>
+
+    <!-- Botones -->
+    <main>
+        <div class="botones" id="myBotones">
+
+        </div>
+    </main>
+
+    <!-- Extra -->
+    <section>
+        <div class="info">
+            <div class="text">
+                <img src="../Img/pokeagua.svg" alt="..." class="card-body-img img-fluid rounded-start "/>
+            </div>
+    
+            <h1 class="tittle-poke pt-4">¿Sabes que es una Pokedex?</h1>
+            <p class="info-poke">Una Pokédex es una enciclopedia electrónica ficticia en el mundo de Pokémon, que proporciona información detallada sobre las diferentes especies de criaturas Pokémon.
+                 Fue concebida en la franquicia de Pokémon como una herramienta utilizada por los entrenadores Pokémon para aprender más acerca de las diversas criaturas que existen en el universo Pokémon.</p>
+            <p class="info-poke">
+                En el contexto de la serie de videojuegos, anime y otros medios de Pokémon, la Pokédex generalmente muestra descripciones, estadísticas, hábitats, evoluciones y otros datos relevantes sobre cada Pokémon.
+                 Cada región dentro del mundo de Pokémon tiene su propia Pokédex, ya que cada una contiene información específica sobre las especies nativas de esa región.
+                  Los entrenadores en el mundo Pokémon usan sus Pokédex para registrar los Pokémon que han visto o capturado a lo largo de su viaje, y el objetivo a menudo es completar la Pokédex capturando o encontrando a todas las especies disponibles.
+            </p>
+    
+            
+            <h1 class="tittle-poke">¿Que es una API?</h1>
+            <p class="info-poke">API son las siglas en inglés de "Application Programming Interface", que en español se traduce como "Interfaz de Programación de Aplicaciones".
+                 Un API es un conjunto de reglas y protocolos que permite que diferentes componentes de software se comuniquen entre sí. 
+                 Es una forma estandarizada en la que las aplicaciones pueden solicitar servicios o datos de otras aplicaciones, sistemas operativos o servicios en línea.
+            </p>
+            <p class="info-poke">Las APIs son fundamentales en el desarrollo de software moderno, ya que permiten que las aplicaciones se integren y funcionen juntas de manera eficiente. 
+                Por ejemplo, muchas aplicaciones móviles utilizan APIs para acceder a servicios en línea, como la autenticación a través de redes sociales, la obtención de datos en tiempo real, la interacción con mapas y la obtención de información de otras fuentes externas.
+            </p>
+    
+            <h1 class="tittle-poke">El uso de API en la creacion de la Pokedex</h1>
+            <p class="info-poke">La PokeAPI es una fuente de datos en línea que proporciona información detallada sobre los Pokémon y sus diversas propiedades. Puede ser utilizada para crear aplicaciones, como una Pokédex digital, que brinden a los usuarios acceso a una amplia gama de información sobre los Pokémon. 
+                Lo cual nos permite:
+            </p>
+            <ul class="lista">
+            <ol><b> ~ Acceso a Datos:</b><p class="info-poke">PokeAPI ofrece datos estructurados sobre Pokémon, como información sobre especies, tipos, estadísticas, habilidades, movimientos, evoluciones y más. Los desarrolladores pueden utilizar estas API para acceder a la información que necesitan para construir una Pokédex.</p></ol>
+            <ol><b> ~ API Endopoints:</b><p class="info-poke">La PokeAPI presenta varios puntos finales (endpoints) que permiten acceder a diferentes tipos de datos. Por ejemplo, hay endpoints para obtener información sobre Pokémon individuales, movimientos, habilidades, tipos, y más. Los desarrolladores pueden hacer solicitudes HTTP a estos endpoints para obtener los datos requeridos.</p></ol>
+            <ol><b> ~ Parseo de Respuestas:</b><p class="info-poke">Para obtener datos específicos de la PokeAPI, los desarrolladores deben hacer solicitudes HTTP utilizando métodos como GET. Esto implica enviar una solicitud a la URL correcta de la API y recibir una respuesta en formato JSON que contiene los detalles del Pokémon u otra información solicitada.</p></ol>
+            <ol><b> ~ Busqueda y Filtrado:</b><p class="info-poke">Una vez que se recibe la respuesta de la PokeAPI, los desarrolladores deben analizar (parsear) la respuesta JSON para extraer la información relevante. Esto implica identificar los campos relevantes en el JSON y transformarlos en una forma comprensible para su aplicación.</p></ol>
+            <ol><b> ~ Actualizaciones y Mantenimiento:</b><p class="info-poke">La PokeAPI puede actualizarse con nueva información a medida que se introducen nuevos juegos de Pokémon y generaciones. Los desarrolladores deben estar preparados para mantener su aplicación actualizada con los datos más recientes.</p></ol>
+        </ul>
+        </div>
+    
+        <aside>
+            <div class="noticias">
+                <h3 class="title-noticias">¿Sabias que?</h3>
+                <p class="noti-poke">"Ash encuentra a Squirtle en el llamado "Escuadrón Squirtle" el que capturo era el líder de esta banda."</p>
+                <img src="../Img/pokemon-squirtle.gif" alt="" width="300px">
+                
+                <h3 class="title-noticias">¿A que no sabias?</h3>
+                <p class="noti-poke">"El Hábitat Natural de Squirtle es el Agua Dulce, viven en Estanques, Ríos y Lagos. También puede vivir en el mar."</p>
+                <img src="../Img/Squirtle 7.gif" alt="" width="300px">
+    
+                <h3 class="title-noticias">¿A que no sabias?</h3>
+                <p class="noti-poke">"Cuando Squirtle llega a Nivel 16 este evoluciona a Wartortle y en Nivel 36 evoluciona a Blastoise. También se puede evolucionar a Blastoise con Mega-Piedra para que evolucione a Mega Blastoise."</p>
+                <img src="../Img/giphy.gif" alt="" width="300px">
+    
+                <h3 class="title-noticias">¿A que no sabias?</h3>
+                <p class="noti-poke">"Squirtle es muuuuuuuuy difícil de encontrar e igualmente de capturar por su gran velocidad y si le lanzas una PokéBall no tendra duda de dartela nuevamente golpeandola con su cola."</p>
+                <img src="../Img/squirtle-falling.gif" alt="" width="300px">
+            </div>
+    
+        </aside>
+       </section>
+
+
+   <!-- Footer -->
+   <div class="container my-5">
+
+    <footer class="bg-primary text-center text-lg-start text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row my-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+  
+            <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+              <img src="../Img/pokeagua.png" height="70" alt=""
+                   loading="lazy" />
+            </div>
+  
+            <p class="text-center">Pokedex personalizada a pokemons de tipo agua y sus combinaciones</p>
+  
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Pokemons: </h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white">Squirtle</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Staryu</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Azumarill</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Kabutops</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Blastoise</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">General Info</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>General information</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>About the shelter</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Statistic data</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Job</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Tenders</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Contact Developers</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <p><i class="fas fa-map-marker-alt pe-2"></i>https://github.com/BeatrizzJimenezz</p>
+              </li>
+              <li>
+                <p><i class="fas fa-map-marker-alt pe-2"></i>https://github.com/Sotalexx</p>
+              </li>
+              <li>
+                <p><i class="fas fa-envelope pe-2 mb-0"></i>custompokedex@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright: Developer
+      </div>
+      <!-- Copyright -->
+    </footer>
+  
+  </div>
+   
+    <!-- JavaScript -->
+    <script src="../JavaScript/principal.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
